@@ -75,8 +75,8 @@ header{
   font-style: italic;
 }
 .carousel .carousel-indicators button.active {background-color:#3ed625;}          /*Mení farbu indikátoru*/
-.carousel-control-next-icon {background-image: url(pictures/arrow-right.svg);}      /*Zmena ikonky šípky na vlastnú*/
-.carousel-control-prev-icon {background-image: url(pictures/arrow-left.svg);}       /*Zmena ikonky šípky na vlastnú*/
+.carousel-control-next-icon {background-image: src(pictures/arrow-right.svg);}      /*Zmena ikonky šípky na vlastnú*/
+.carousel-control-prev-icon {background-image: src(pictures/arrow-left.svg);}       /*Zmena ikonky šípky na vlastnú*/
 
 /*BUTTON*/
 #myBtn {
