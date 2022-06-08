@@ -1,0 +1,385 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(58, 58, 58);
+}
+
+/*NAVIGATION*/
+.logo {
+  width: 4rem;
+  height: 4rem;
+}
+#logo{
+  display: flex;
+}
+.nav {
+  --bs-nav-link-color: #3ed625;
+  --bs-nav-link-hover-color: green;
+  font-size: 2rem;
+}
+
+.nav-pills {
+  --bs-nav-pills-link-active-bg: #3ed625;
+  margin-top: 0.5rem;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+header{
+  display: flex;
+}
+
+/*CAROUSEL*/
+.slides{
+  margin-bottom: 4rem;
+}
+.car {
+  height: fit-content;
+}
+.prace {
+  font-size: 2.5rem;
+  font-family: "Arial Narrow Bold", sans-serif;
+  color: #3ed625;
+  background-color: rgb(58, 58, 58);
+  border-radius: 1rem;
+  font-style: italic;
+}
+.carousel .carousel-indicators button.active {background-color:#3ed625;}          /*Mení farbu indikátoru*/
+.carousel-control-next-icon {background-image: url(pictures/arrow-right.svg);}      /*Zmena ikonky šípky na vlastnú*/
+.carousel-control-prev-icon {background-image: url(pictures/arrow-left.svg);}       /*Zmena ikonky šípky na vlastnú*/
+
+/*BUTTON*/
+#myBtn {
+  /*display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(160, 158, 158); /* Set a background color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 100%; /* Rounded corners */
+}
+
+/*DOMOV*/
+.text {
+  color: white;
+  font-size: 2.1rem;
+  text-align: center;
+}
+i{
+  text-align: center;
+}
+
+/*PONUKA*/
+main > h1 {
+  color: #3ed625;
+  font-size: 3rem;
+}
+main > ul > li > h1 {
+  color: #3ed625;
+  font-size: 2.5rem;
+}
+ul > li {
+  padding: 1rem;
+}
+li > p {
+  color: white;
+  text-align: left;
+  font-size: 1.7rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+i{
+  font-style: italic;
+  font-size: 2.1rem;
+  padding: 2rem;
+}
+.show-1, .show-2, .show-3, .show-4, .show-5, .hide-1, .hide-2, .hide-3, .hide-4, .hide-5{
+  color:#3ed625;
+  font-size: 1.7rem;
+  text-decoration: underline;
+  font-style: italic;
+
+}
+.show-1, .show-2, .show-3, .show-4, .show-5{
+  color: white;
+}
+
+
+/*FOOTER*/
+footer {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  color: #3ed625;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/*FORMULAR*/
+#formular {
+  position: relative;
+  padding: 0px;
+  margin: 0px auto;
+  width: 100%;
+}
+
+#select-width {
+  width: 100%;
+  height: min-content;
+
+}
+
+input {
+  padding: 12px;
+  font-size: 1.2rem;
+  background-color: #222222;
+  border: 1px solid #5f5f5f;
+  color: #9c9c9c;
+  margin-bottom: 20px;
+  display: block;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #979797;
+}
+
+.input-width {
+  width: 100%;
+}
+
+.width-mobil {
+  width: 100%;
+}
+
+.width-mail {
+  width: 100%;
+}
+
+.width-adresa {
+  width: 100%;
+}
+
+#input-submit {
+  border-radius: 25px;
+  width: 15%;
+}
+
+#input-submit:hover {
+  background-color: #3ed625;
+  color: #323232;
+  cursor: pointer;
+}
+
+::placeholder {
+  color: #9c9c9c;
+  opacity: 1;
+}
+
+select {
+  width: 300px;
+  padding: 12px;
+  font-size: 1.2rem;
+  background-color: #222222;
+  border: 1px solid #5f5f5f;
+  color: #9c9c9c;
+}
+
+option[vynulovat] {
+  display: none;
+}
+
+textarea {
+  font-family: "Source Sans Pro", sans-serif;
+  width: 100%;
+  color: #9c9c9c;
+  background-color: #222222;
+  border: 1px solid #5f5f5f;
+  resize: none;
+  height: 23rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+#formular-center {
+  width: 100%;
+}
+#formular-center > p {
+  color: #9c9c9c;
+  margin-bottom: 1rem;
+}
+.spolu{
+  display: flex;
+  gap: 3%;
+}
+
+/*KONTAKT*/
+.budova{
+  width: 80%;
+  margin-left: auto;
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+a:hover{
+  color: #3ed625;
+}
+.infos{
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.ikonka{
+  height: 2rem;
+  margin-top: 1rem;
+  margin-left: 5rem;
+}
+.address{
+  margin-top: 1rem;
+}
+
+/*ONAS*/
+main >.text{
+  margin: auto;
+}
+.text-center{
+  width: 50%;
+}
+.about{
+  display: flex;
+  gap: 2rem;
+}
+.points{
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.points>ul>li{
+  background-color: #3ed625;
+  margin: 1rem;
+}
+ul > li{
+  height: fit-content;
+}
+.ab1{
+  margin-top: 3rem;
+  color: white;
+  font-size: 1.5rem;
+}
+.ps-1, .ps-2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.headpoints{
+  color: #3ed625;
+  font-size: 3rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+
+
+
+/*ZLOMY*/
+@media only screen and (min-width:1200px) and (max-width:1400px)  /*Desktop*/
+ {
+  .logo{
+    margin-left:145%
+  }
+ }
+ @media only screen and (max-width:1200px) and (min-width:994px)  /*Desktop*/
+ {
+  .infos{
+    display: block;
+    text-align: center;
+  }
+  .ikonka{
+    margin-left: 0;
+  }
+  .logo{
+    margin-left:94%;
+  }
+ }
+ @media only screen and (max-width:993px)  /*Desktop*/
+ {
+  ul.nav.nav-pills{
+    display: block;
+  }
+  
+  .points > ul > li{
+    height:fit-content;
+  }
+  .about{
+    display: block;
+  }
+  .about > img{
+    margin-left: 25%;
+  }
+  
+  .logo{
+    height: 16rem;
+    width: 8rem;
+  }
+  .log{
+    font-size: 3rem;
+  }
+  .infos{
+    display: block;
+    text-align: center;
+  }
+  .ikonka{
+    margin-left: 0;
+  }
+ }
+ @media only screen and (max-width:768px)
+ {
+  .nav-items{
+    display: flex;
+  }
+  .ps-21{
+    padding-top: 0.5rem;
+  }
+  .ps-1, .ps-2{
+    display: block;
+  }
+  #input-submit{
+    width: 22%;
+  }
+
+ }

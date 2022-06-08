@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <link href="reset.css" type="text/css" rel="stylesheet" />
+  <link href="styly.css" type="text/css" rel="stylesheet" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="domov.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <img src="pictures/ethereum-classic-logo.png" alt="logo" class="logo" />
+        <span class="log" style="color: white">GREENCOMP</span>
+      </a>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a href="domov.html" class="nav-link">Domov</a>
+        </li>
+        <li class="nav-item">
+          <a href="ponuka.html" class="nav-link">Ponuka</a>
+        </li>
+        <li class="nav-item">
+          <a href="objednavky.html" class="nav-link active" aria-current="page">Objednávky</a>
+        </li>
+        <li class="nav-item"><a href="kontakt.html" class="nav-link">Kontakt</a></li>
+        <li class="nav-item"><a href="onas.html" class="nav-link">O nás</a></li>
+      </ul>
+    </header>
+
+
+
+    <main>
+      <form method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="action" value="submit">
+        <div id="formular">
+          <br>
+          <div id="formular-center">
+            <p>*Povinné</p>
+            <div class="spolu">
+              <input class="input-width" type="text" name="meno" placeholder="*Meno a priezvisko" required minlength="5"
+                maxlength="128">
+
+              <input class="width-mail" type="text" name="email" placeholder="*E-mail" required maxlength="256">
+            </div>
+
+            <div class="spolu">
+              <input class="width-mobil" type="text" name="mobil" placeholder="Mobilné číslo" minlength="7">
+              <select name="sluzba" id="select-width">
+                <option>*Vyberte službu</option>
+                <option>Zostavenie počítača</option>
+                <option>Kompletná inštalácia softvéru</option>
+                <option>Servis počítačov</option>
+                <option>Iná individuálna služba</option>
+              </select>
+            </div>
+            <div class="spolu">
+              <input class="width-adresa" type="text" name="mesto" placeholder="*Mesto" required>
+              <input class="width-adresa" type="text" name="psc" placeholder="*PSČ" required>
+              <input class="width-adresa" type="text" name="ulica" placeholder="*Ulica" required>
+            </div>
+          </div>
+          <textarea placeholder="Požiadavka k Vašej zostave, alebo k našim službám" name="poznamka"
+            minlength="5"></textarea>
+          <input name="message" type="hidden" value="">
+          <input id="input-submit" type="submit" value="Odoslať">
+        </div>
+      </form> 
+    </main>
+    <div class="scrolltotop">
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <img src="pictures/arrow-up.svg" alt="šípka"/>
+      </button>
+    </div>
+    <footer>© 2022 by Dominik Feco. All Rights Reserved.</footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+  <link href="reset.css" type="text/css" rel="stylesheet" />
+  <link href="styly.css" type="text/css" rel="stylesheet" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="domov.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <img src="pictures/ethereum-classic-logo.png" alt="logo" class="logo" />
+        <span class="log" style="color: white">GREENCOMP</span>
+      </a>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a href="domov.html" class="nav-link active" aria-current="page">Domov</a>
+        </li>
+        <li class="nav-item">
+          <a href="ponuka.html" class="nav-link">Ponuka</a>
+        </li>
+        <li class="nav-item">
+          <a href="objednavky.html" class="nav-link">Objednávky</a>
+        </li>
+        <li class="nav-item"><a href="kontakt.html" class="nav-link">Kontakt</a></li>
+        <li class="nav-item"><a href="onas.html" class="nav-link">O nás</a></li>
+      </ul>
+    </header>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div>
+      <ul class="text">
+        <li>
+          <i>Počítač je už dnes bežným vybavením domácnosti, kancelárie alebo školy. <br> Umožňuje nám pracovať,
+            získavať informácie, komunikovať so známymi na
+            druhom konci sveta a postará sa aj o náš voľný čas.</i>
+        </li>
+        <li>
+          <i>Chcete si vybrať
+            ten správny?</i> <br> Na to sme tu my, aby sme vám pomohli vybrať ten, ktorý
+          vám bude vyhovovať nie len teraz, ale aj o pár rokov.
+        </li>
+        <li>
+          <i>Máte už ten
+            správny počítač a chcete pre neho tú najlepšiu starostlivosť?</i>
+          <br> Aj na to
+          sme tu my a pomôžeme vám s pravidelným kvalitným servisom so zárukou.
+        </li>
+      </ul>
+    </div>
+
+    <hr />
+    <div class="slides">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active butt"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="pictures/88a6350f2d7fc13b5acd16581fa4f9d8.jpg" class="d-block w-100 car" alt="obrázok PC zostavy"
+              data-bs-interval="1s" />
+            <div class="carousel-caption d-none d-md-block">
+              <p class="prace">NAŠE PRÁCE</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+            <img src="pictures/75334_06_check-out-maingears-new-sff-gaming-pc-packed-with-geforce-rtx-3090_full.jpg"
+              class="d-block w-100 h-80 car" alt="obrázok PC zostavy" />
+            <div class="carousel-caption d-none d-md-block">
+              <p class="prace">NAŠE PRÁCE</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="6000">
+            <img src="pictures/gaming-desktop-computer-model-3d-model-obj-mtl-fbx-stl-blend-dae-ply.jpg"
+              class="d-block w-100 h-80 car" alt="obrázok PC zostavy" />
+            <div class="carousel-caption d-none d-md-block">
+              <p class="prace">NAŠE PRÁCE</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="scrolltotop">
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <img src="pictures/arrow-up.svg" alt="šípka"/>
+      </button>
+    </div>
+    <footer>© 2022 by Dominik Feco. All Rights Reserved.</footer>
+  </div>
+</body>
+
+</html>
